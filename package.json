@@ -1,0 +1,34 @@
+{
+  "name": "k3am-dxspot-backend",
+  "version": "0.0.1",
+  "description": "A web frontend for displaying dx spots",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kecramer/k3am-dxspot-backend.git"
+  },
+  "keywords": [
+    "amateurradio",
+    "radio",
+    "dx"
+  ],
+  "author": "Kevin Cramer <kcramer@gmail.com> (https://github.com/kecramer)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/kecramer/k3am-dxspot-backend/issues"
+  },
+  "homepage": "https://github.com/kecramer/k3am-dxspot-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "dxcluster": "0.0.2",
+    "express": "^4.16.3",
+    "luxon": "^1.3.1",
+    "mongoose": "^5.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
