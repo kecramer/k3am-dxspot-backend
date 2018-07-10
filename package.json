@@ -23,6 +23,7 @@
   "homepage": "https://github.com/kecramer/k3am-dxspot-backend#readme",
   "dependencies": {
     "cors": "^2.8.4",
+    "dxccjs": "0.0.1",
     "dxcluster": "0.0.2",
     "express": "^4.16.3",
     "luxon": "^1.3.1",
