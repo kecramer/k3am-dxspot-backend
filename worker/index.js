@@ -8,7 +8,7 @@ let opts = {
   host: 'dxusa.net',
   port: 7300,
   loginPrompt: 'login:',
-  call: 'K3AM'
+  call: 'K3AM-5'
 }
 
 conn.connect(opts)
