@@ -27,7 +27,8 @@
     "dxcluster": "0.0.2",
     "express": "^4.16.3",
     "luxon": "^1.3.1",
-    "mongoose": "^5.2.2"
+    "mongoose": "^5.2.2",
+    "node-fetch": "^2.1.2"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
