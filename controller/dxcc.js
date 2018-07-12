@@ -6,7 +6,18 @@ let dxcc = new dxccjs('./data/cty.xml')
 
 const show = (req, res) => {
   let dxccEntity = dxcc.checkCall(req.params.call)
-  res.json(dxccEntity)
+  if(dxccEntity.entity[0] === 'UNITED STATES OF AMERICA') {
+    fetch(`https://callook.info/${req.params.call}/json`)
+      .then((resp) => resp.json())
+      .then((resp) => {
+        console.log(resp)
+        dxccEntity.lat[0] = resp.location.latitude
+        dxccEntity.long[0] = resp.location.longitude
+        res.json(dxccEntity)
+      })
+  } else {
+    res.json(dxccEntity)
+  }
 }
 
 const showUSA = (req, res) => {
